@@ -1,8 +1,9 @@
 module.exports = {
   db: 'localhost',
+  sessionKey: 'express.sid',
 
   localAuth: true,
-  sessionSecret: "Your Session Secret goes here",
+  sessionSecret: "session_secret",
 
   mailgun: {
     login: 'Your Mailgun SMTP Username',

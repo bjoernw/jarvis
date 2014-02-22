@@ -152,8 +152,6 @@ if (!('webkitSpeechRecognition' in window)) {
                 console.log(event.results[i]);
                 final_transcript += event.results[i][0].transcript;
                 if (final_transcript){
-                    console.log('emitting event');
-                    console.log(final_transcript);
                     socket.emit('transcript_received',{'data' : final_transcript});
                 }
             } else {
